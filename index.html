@@ -984,6 +984,16 @@
     .pl-chips { gap: 0.4rem; }
     .pl-chips a { padding: 0.5rem 0.8rem; font-size: 0.64rem; }
   }
+
+  /* Book section buttons */
+  .book-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+  .btn-book-wa { background: transparent; color: var(--gold); }
+  .btn-book-wa::before { background: var(--gold); }
+  .btn-book-wa:hover { color: var(--charcoal); }
+  @media (max-width: 768px) {
+    .book-buttons { flex-direction: column; align-items: center; }
+    .book-buttons .btn-book { width: 100%; max-width: 320px; text-align: center; }
+  }
 </style>
 </head>
 <body>
@@ -1434,7 +1444,10 @@
     <h2 class="section-title">Book Your Visit</h2>
     <div class="section-divider"></div>
     <p>Book your appointment in under 60 seconds via Fresha — available 24/7, no phone call needed. Walk-ins are always welcome too.</p>
-    <a href="https://www.fresha.com/en-GB/a/lumie-studio-kl-kuala-lumpur-10-jalan-28-70a-ahh62act/all-offer?venue=true&pId=1373677" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Book appointment at Lumié Studio KL on Fresha"><span>Book Now on Fresha</span></a>
+    <div class="book-buttons">
+      <a href="https://www.fresha.com/en-GB/a/lumie-studio-kl-kuala-lumpur-10-jalan-28-70a-ahh62act/all-offer?venue=true&pId=1373677" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Book appointment at Lumié Studio KL on Fresha"><span>Book Now on Fresha</span></a>
+      <a href="https://wa.me/60123472178" target="_blank" rel="noopener noreferrer" class="btn-book btn-book-wa" aria-label="Book appointment at Lumié Studio KL on WhatsApp"><span>Book Now on WhatsApp</span></a>
+    </div>
   </div>
 </div>
 
